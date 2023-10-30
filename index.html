@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zulkarnain Portfolio </title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Untitled design.jpg " alt="Zulkarnain Inamdar " height="250" width="250" class="logo">
+                <ul>
+                    <li><a href="#">Home </a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer ,Programmer And Data scientist </p>
+                <h1>Hi , I am <span>Zulkarnain </span><br> Inamdar from India </h1>
+            </div>
+        </div>
+    </div>
+<!-- --------------about------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Head Wearable [Squid Game] Front Man mask Ver_ 2-fotor-bg-remover-20231022112845 (1).png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subt">About Me </h1><br>
+                    <p>
+                        Hi, I'm Zulkarnain Inamdar, a multifaceted professional passionate about crafting seamless digital experiences. With expertise in web development, programming, and data science, I transform ideas into innovative solutions. As a web developer, I create visually appealing websites with intuitive interfaces. In the realm of programming, I excel in writing efficient and scalable code for diverse applications. Additionally, my data science skills empower businesses by extracting actionable insights from complex datasets. With a collaborative spirit and a commitment to excellence, I thrive on turning challenges into opportunities. Let's collaborate and bring your digital vision to life!
+
+
+                    </p>
+                    <div class="tab-t">
+                        <p class="tablinks activelink" onclick="opentab('skills')">Skills</p>
+                        <p class="tablinks" onclick="opentab('Exp')"">Experience</p>
+                        <p class="tablinks" onclick="opentab('Ed')"">Education</p>
+                    </div>
+                    <!-- skills -->
+                    <div class="tab-content activetab" id="skills">
+                        <ul>
+                            <li><span>Python and C++/C</span><br>Programming in Python and C++/C</li>
+                            <li><span>Data scientist</span><br>Data Scince in Python and Data Visualization</li>
+                            <li><span>Web development</span><br>Create E-commrece Website and Dynamic websites</li>
+                            <li><span>App Developer</span><br>Build Android Apps</li>
+                            <li><span>Digital Markiting</span><br>Markiting In Every Fields </li>
+                        </ul>
+                    </div>
+                    <!-- experience -->
+                    <div class="tab-content" id="Exp">
+                        <ul>
+                            <li><span>2020-Present</span><br>Apps development Using Sketchware</li>
+                            <li><span>2021-Present</span><br>Web Development</li>
+                            <li><span>2021-2022</span><br>1 year Experience Python Programming</li>
+                            <li><span>2022-2023</span><br>Create Red Rose Company</li>
+                            <li><span>2023</span><br>Internship in Data scientist From Banglore</li>
+                        </ul>
+                        <!-- Education -->
+                    </div><div class="tab-content" id="Ed">
+                        <ul>
+                            <li><span>2010</span><br>12th Passed With Marks 91.7</li>
+                            <li><span>2021</span><br>Complete First year In Computer Engineering 8.5 CGP</li>
+                            <li><span>2022</span><br>Complete Second year In Computer Engineering 7.5 CGP</li>
+                            <li><span>2023-present</span><br>Third year</li>
+                            
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tablinks");
+    var tabContents = document.getElementsByClassName("tab-content");
+    function opentab(tabname) {   
+        for(tablink of tablinks){
+            tablink.classList.remove("activelink")
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("activetab")
+        }
+        event.currentTarget.classList.add("activelink");
+        document.getElementById(tabname).classList.add("activetab")
+     }
+
+</script>
+</body>
+</html>
